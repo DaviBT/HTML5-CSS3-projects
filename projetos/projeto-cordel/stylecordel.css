@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Nanum+Gothic:wght@700&display=swap');
+
+:root {
+    --fonte-texto:'Lobster Two', sans-serif;
+    --fonte-titulo:'Nanum Gothic', sana-serif;
+    --cor-fundo:background-color:rgba(0, 0, 0, 0.151);
+    --cor-texto1:white;
+    --cor-fundo-titulo:darkgreen;
+}
+
+* {
+    margin:0px;
+}
+
+
+
+    body {
+        font-family: var(--fonte-texto);
+        text-align:center;
+        min-height: 100vh;
+        background-color: var(cor-fundo);
+        }
+
+    header>h1, header>p {
+        font-family: var(--fonte-titulo);
+        background-color:var(--cor-fundo-titulo);
+        color: var(--cor-texto1);
+        font-variant: small-caps;
+        padding-top:10px;
+        padding-bottom:10px;
+        font-size: 3vw;
+        }
+
+        header>p {
+        font-size:1.5vw;
+        }
+
+    header>p>a {
+        color:var(--cor-texto1);
+        text-decoration:none;
+        font-weight:bolder;
+    }
+    
+    header>p>a:hover {
+        text-decoration:underline;
+    }
+
+
+
+    article {
+        text-align:left;
+        font-size:2.5vw;
+    }
+
+    section {
+        padding-top:10vh;
+        padding-bottom:10vh;
+        line-height:2em;
+        padding-left:3px;
+    }
+
+    section.imagem>p {
+        padding-left:10px;
+        color:var(--cor-texto1);
+        background-color:rgba(49, 44, 44, 0.527);
+        display:inline-block;
+    }
+
+    .imagem {
+        height:40vw;
+        image-orientation:center center;
+        background-size:cover;
+        box-shadow: inset 3px 3px 13px 0px black;
+        background-attachment: fixed;
+    }
+
+    #img1 {
+        background-image:url('imagens/background001.jpg');
+        background-position: right center;
+        text-shadow: 1px 1px 5px black;
+    }
+
+    #img2 {
+        background-image:url('imagens/background002.jpg');
+        background-position:center center;
+        text-shadow: 1px 1px 5px black;
+    }
+
+
+
+    footer {
+        color:white;
+        background-color:var(--cor-fundo-titulo);
+        font-family:var(--fonte-titulo);
+        text-align:center;
+        font-size: 1.5vw;
+    }

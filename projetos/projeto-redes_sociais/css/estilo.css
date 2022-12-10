@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+* {
+    margin:0px;
+    padding:0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+:root{
+    --cortexto:#FDF0D5;
+    --v1:#780000;
+    --v2:#C1121F;
+    --a1:#003049;
+    --a2:#669BBC;
+    --fontexto: 'Raleway', sans-serif;
+}
+
+HTML, body {
+    height: 100vh;
+    width:100vw;
+    background-color:black;
+}
+
+body {
+    background: url('../imagens/fundo-tecnologia.jpg') no-repeat right center;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+main{
+    height:100vh;
+    position:relative;
+}
+
+#celular{
+    height:627px;
+    width:311px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate( -50%,-50%);
+    background: url(../imagens/frame-iphone.png) no-repeat;
+}
+
+iframe#tela{
+    position:relative;
+    top:80px;
+    left:22px;
+    width:268px;
+    height:480px;
+}
+
+main > section#redes-sociais {
+    display: block;
+    float: right;
+}
+
+section#redes-sociais > a > img{
+    width:50px;
+    border-radius:100px;
+    margin:10px;
+    box-sizing: border-box;
+    box-shadow: 2px 1px 50px rgba(0, 0, 0, 0.271);
+}
+
+section#redes-sociais > a > img:hover{
+    box-shadow: 2px 1px 50px rgba(0, 72, 255, 0.271);
+    transition-duration: 0.50s;
+    transform:translate(-1px, -2px);
+    border:2px solid rgba(245, 245, 245, 0.522);
+}
