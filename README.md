@@ -1,2 +1,2 @@
-# HTML5-e-CSS3-projetos
+# HTML5-&-CSS3-small projects
 
